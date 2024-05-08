@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: rgb(150, 150, 150);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+        }
+        .diva{
+            display: flex;
+            flex-direction: column;
+            margin: 1em;
+        }
+        .button-sub {
+            background-color: white;
+            border: none;
+            padding: 0.3em;
+            width: 10em;
+            margin-left: 1.3em;
+            border-radius: 2em;
+            cursor: pointer;
+        }
+        .aa {
+            color: rgb(166, 10, 10);
+        }
+        h1{
+            color: rgb(164, 2, 2);
+        }
+        input {
+            border: none;
+            padding: 0.6em;
+            border-radius: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Login</h1>
+    </div>
+    <form action="/login" method="post">
+        <div class="diva">
+        <label for="username">Type Your Username!</label>
+        <input type="text" name="username" placeholder="user..">
+    </div>
+    <div class="diva">
+        <label for="username">Type Your Password!</label>
+        <input type="password" name="password" placeholder="pass..">
+    </div>
+    <div class="diva">
+        <button class="button-sub" type="submit">Submit</button>
+        </div>
+    </form>
+    <nav>
+        <div>Don't have account!<a class="aa" href="/signup"> Signup!</a></div>
+    </nav>
+</body>
+</html>
